@@ -33,3 +33,19 @@ Does not monitor real systems.
 - [ ] Docker support
 - [ ] Docker Compose
 - [ ] Security dashboard
+
+## Run with Docker
+
+Build the image:
+
+    docker build -t rewriteos-security-lab:v0.1.0 .
+
+Run the analyzer:
+
+    docker run --rm rewriteos-security-lab:v0.1.0
+
+The container runs as a non-root user and analyzes fictional logs.
+
+## Build note
+
+The project currently supports the standard Docker build command.
